@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="MyFirstSpringboot" />
         <module name="Springboot-Mybatis" />
+        <module name="SpringSecurity-Login" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />
@@ -17,6 +18,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="MyFirstSpringboot" options="-parameters" />
       <module name="MyFirstSpringbootAllocation" options="-parameters" />
+      <module name="SpringSecurity-Login" options="-parameters" />
       <module name="Springboot-Mybatis" options="-parameters" />
     </option>
   </component>

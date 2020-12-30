@@ -9,7 +9,3 @@ spring:
 mybatis:
   type-aliases-package: cn.shishc.domain
   mapper-locations: classpath:mapper/*.xml
-
-## swagger-ui
-mconfig:
-  swagger-ui-open: true
