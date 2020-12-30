@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class BasicController {
 
+    
     @RequestMapping("/hello")
     String home() {
         return "Springboot - SpringSecurity!";
