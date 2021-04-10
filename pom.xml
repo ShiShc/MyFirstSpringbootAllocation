@@ -12,6 +12,7 @@
         <module>MyFirstSpringboot</module>
         <module>Springboot-Mybatis</module>
         <module>SpringSecurity-Login</module>
+        <module>springboot-shiro</module>
     </modules>
 
     <properties>
