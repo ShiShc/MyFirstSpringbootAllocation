@@ -13,6 +13,7 @@
         <module>Springboot-Mybatis</module>
         <module>SpringSecurity-Login</module>
         <module>springboot-shiro</module>
+        <module>springboot-shiro-test</module>
     </modules>
 
     <properties>
