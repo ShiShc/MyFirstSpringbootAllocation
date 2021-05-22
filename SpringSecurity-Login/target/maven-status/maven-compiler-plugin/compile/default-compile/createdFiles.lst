@@ -1,0 +1,5 @@
+cn\shishc\controller\UserController.class
+cn\shishc\controller\RootController.class
+cn\shishc\Application.class
+cn\shishc\config\SecurityConfig.class
+cn\shishc\controller\BasicController.class

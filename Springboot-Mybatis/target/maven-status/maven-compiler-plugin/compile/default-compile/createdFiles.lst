@@ -1,0 +1,6 @@
+cn\shishc\service\serviceImpl\CityServiceImpl.class
+cn\shishc\domain\City.class
+cn\shishc\dao\CityDao.class
+cn\shishc\SpringMybatisApplication.class
+cn\shishc\controller\CityController.class
+cn\shishc\service\CityService.class

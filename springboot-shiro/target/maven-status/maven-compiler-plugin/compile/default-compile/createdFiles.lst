@@ -1,0 +1,5 @@
+icu\shishc\entity\UserInfo.class
+icu\shishc\ShiroApplication.class
+icu\shishc\entity\SysRole.class
+icu\shishc\config\ShiroConfig.class
+icu\shishc\entity\SysPermission.class
