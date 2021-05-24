@@ -10,6 +10,7 @@
         <module name="springboot-fastdfs" />
         <module name="SpringSecurity-Login" />
         <module name="springboot-shiro-test" />
+        <module name="springboot-new-file" />
         <module name="MyFirstSpringboot" />
         <module name="Springboot-Mybatis" />
         <module name="springboot-file-system" />
@@ -31,6 +32,7 @@
       <module name="springboot-fastdfs" options="-parameters" />
       <module name="springboot-file-system" options="-parameters" />
       <module name="springboot-fileupload" options="-parameters" />
+      <module name="springboot-new-file" options="-parameters" />
       <module name="springboot-shiro" options="-parameters" />
       <module name="springboot-shiro-test" options="-parameters" />
     </option>

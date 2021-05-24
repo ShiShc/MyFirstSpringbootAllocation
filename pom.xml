@@ -17,6 +17,7 @@
         <module>spring-boot-file-upload</module>
         <module>springboot-fastdfs</module>
         <module>springboot-file-system</module>
+        <module>springboot-new-file</module>
     </modules>
 
     <properties>
