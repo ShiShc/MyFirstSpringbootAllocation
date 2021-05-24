@@ -18,6 +18,7 @@
         <module>springboot-fastdfs</module>
         <module>springboot-file-system</module>
         <module>springboot-new-file</module>
+        <module>springboot-file-blog</module>
     </modules>
 
     <properties>

@@ -13,6 +13,7 @@
         <module name="springboot-new-file" />
         <module name="MyFirstSpringboot" />
         <module name="Springboot-Mybatis" />
+        <module name="springboot-file-blog" />
         <module name="springboot-file-system" />
         <module name="springboot-shiro" />
         <module name="spring-boot-file-upload" />
@@ -30,6 +31,7 @@
       <module name="Springboot-Mybatis" options="-parameters" />
       <module name="spring-boot-file-upload" options="-parameters" />
       <module name="springboot-fastdfs" options="-parameters" />
+      <module name="springboot-file-blog" options="-parameters" />
       <module name="springboot-file-system" options="-parameters" />
       <module name="springboot-fileupload" options="-parameters" />
       <module name="springboot-new-file" options="-parameters" />
