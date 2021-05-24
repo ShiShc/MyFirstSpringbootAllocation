@@ -16,6 +16,7 @@
         <module>springboot-shiro-test</module>
         <module>spring-boot-file-upload</module>
         <module>springboot-fastdfs</module>
+        <module>springboot-file-system</module>
     </modules>
 
     <properties>
