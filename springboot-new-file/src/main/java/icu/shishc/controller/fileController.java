@@ -46,7 +46,7 @@ public class fileController {
     @GetMapping(value = "/download")
     public void fileDownLoad(HttpServletResponse response) {
         try {
-            DownloadKit.download(response,"D:\\uploadTest\\[1560147654953] - 20171229094846.png","586.png");
+            DownloadKit.download(response,"D:\\uploadTest\\1621907917509.jpg","1621907917509.jpg");
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }

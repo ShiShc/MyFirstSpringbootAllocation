@@ -2,9 +2,14 @@ package com.shishc.util;
 
 import com.shishc.entity.Attachment;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpUtils;
 import java.io.*;
 import java.net.URLEncoder;
 
@@ -62,36 +67,79 @@ public class FileUtils {
 
 
     public static boolean get(HttpServletResponse response, String path) throws Exception{
-        File sourceFile = new File(path);
+        String test = "S:\\MyFirstSpringbootAllocation\\attachments\\0-1621849325261-head.jpg";
+        File sourceFile = new File(test);
         if(!sourceFile.isFile() || !sourceFile.exists()) {
-            throw new RuntimeException("null");
+            System.out.println("啥也不是");
         }
-        String filename = path.substring(path.lastIndexOf("-"));
+//        File sourceFile = new File(path);
+//        if(!sourceFile.isFile() || !sourceFile.exists()) {
+//            throw new RuntimeException("null");
+//        }
+        String filename = test.substring(test.lastIndexOf("-"));
         FileInputStream fileInputStream = null;
         BufferedInputStream bufferedInputStream = null;
         OutputStream outputStream = null;
         try {
-            filename = URLEncoder.encode(filename, "UTF-8");
-            response.setCharacterEncoding("UTF-8");
+//            filename = URLEncoder.encode(filename, "UTF-8");
+//            response.setCharacterEncoding("UTF-8");
             response.setContentType("application/force-download");
             response.setHeader("Content-Disposition", "attachment; filename=\"" + filename + "\"");
             fileInputStream = new FileInputStream(sourceFile);
-            bufferedInputStream = new BufferedInputStream(fileInputStream);
             outputStream = response.getOutputStream();
             byte[] buffer = new byte[1024];
-            int read = bufferedInputStream.read(buffer);
-            while(read != -1) {
-                outputStream.write(buffer, 0, read);
-                read = bufferedInputStream.read(buffer);
+            int len;
+            while((len = fileInputStream.read(buffer)) != -1) {
+                outputStream.write(buffer, 0, len);
             }
+            //            filename = URLEncoder.encode(filename, "UTF-8");
+//            response.setCharacterEncoding("UTF-8");
+//            response.setContentType("application/force-download");
+//            response.setHeader("Content-Disposition", "attachment; filename=\"" + filename + "\"");
+//            fileInputStream = new FileInputStream(sourceFile);
+//            bufferedInputStream = new BufferedInputStream(fileInputStream);
+//            outputStream = response.getOutputStream();
+//            byte[] buffer = new byte[1024];
+//            int read = bufferedInputStream.read(buffer);
+//            while(read != -1) {
+//                outputStream.write(buffer, 0, read);
+//                read = bufferedInputStream.read(buffer);
+//            }
         } catch (Exception e) {
             e.printStackTrace();
             throw new RuntimeException("wrong");
         } finally {
+            System.out.println("....");
             outputStream.close();
-            bufferedInputStream.close();
+//            bufferedInputStream.close();
             fileInputStream.close();
         }
         return false;
     }
+
+    public static ResponseEntity<byte[]> getImg() throws FileNotFoundException {
+        String path = "D:\\uploadTest\\1621907917509.jpg";
+        File file = new File(path);
+        FileInputStream inputStream = new FileInputStream(file);
+        byte[] bytesByStream = getBytesByStream(inputStream);
+        final HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.setContentType(MediaType.IMAGE_JPEG);
+        return new ResponseEntity<>(bytesByStream, httpHeaders, HttpStatus.OK);
+    }
+
+    private static  byte[] getBytesByStream(FileInputStream fileInputStream) {
+        byte[] bytes = new byte[1024];
+        int b;
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        try {
+            while((b = fileInputStream.read(bytes)) != -1) {
+                byteArrayOutputStream.write(bytes, 0, b);
+            }
+            return byteArrayOutputStream.toByteArray();
+        } catch (Exception e) {
+
+        }
+        return null;
+    }
+
 }
