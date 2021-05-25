@@ -24,8 +24,8 @@ public class FileController {
     }
 
     @RequestMapping(value = "/file", method = RequestMethod.GET)
-    public void getAttach(@RequestParam String path, @RequestParam String filename, HttpServletResponse response) {
-        FileUtils.get(response, path, filename);
+    public void getAttach(@RequestParam String sourceFile, HttpServletResponse response) throws Exception {
+        FileUtils.get(response, sourceFile);
     }
 
 }
