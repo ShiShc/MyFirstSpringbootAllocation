@@ -12,11 +12,11 @@ import java.security.NoSuchAlgorithmException;
  */
 
 public class FastdfsUtil {
-    public static String getSourceUrl(String remoteFilename) throws FastdfsException, UnsupportedEncodingException, NoSuchAlgorithmException {
+    public static String getSourceUrl(String group, String remoteFilename) throws FastdfsException, UnsupportedEncodingException, NoSuchAlgorithmException {
         final String host = "http://123.56.42.105:8888";
         final String secretKey = "369999";
         int lts = (int)(System.currentTimeMillis() / 1000);
         String token = ProtoCommon.getToken(remoteFilename, lts, secretKey);
-        return host + "/" + remoteFilename + "?token=" + token + "&ts=" + lts;
+        return host + "/" + group + "/" + remoteFilename + "?token=" + token + "&ts=" + lts;
     }
 }
