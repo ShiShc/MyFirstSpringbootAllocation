@@ -11,6 +11,7 @@
         <module name="SpringSecurity-Login" />
         <module name="springboot-shiro-test" />
         <module name="springboot-new-file" />
+        <module name="springboot-fastdfs-test" />
         <module name="MyFirstSpringboot" />
         <module name="Springboot-Mybatis" />
         <module name="springboot-file-blog" />
@@ -19,9 +20,7 @@
         <module name="spring-boot-file-upload" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8">
-      <module name="springboot-fileupload" target="8" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8" />
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -31,9 +30,9 @@
       <module name="Springboot-Mybatis" options="-parameters" />
       <module name="spring-boot-file-upload" options="-parameters" />
       <module name="springboot-fastdfs" options="-parameters" />
+      <module name="springboot-fastdfs-test" options="-parameters" />
       <module name="springboot-file-blog" options="-parameters" />
       <module name="springboot-file-system" options="-parameters" />
-      <module name="springboot-fileupload" options="-parameters" />
       <module name="springboot-new-file" options="-parameters" />
       <module name="springboot-shiro" options="-parameters" />
       <module name="springboot-shiro-test" options="-parameters" />
