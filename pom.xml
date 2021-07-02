@@ -13,13 +13,10 @@
         <module>Springboot-Mybatis</module>
         <module>SpringSecurity-Login</module>
         <module>springboot-shiro</module>
-        <module>springboot-shiro-test</module>
-        <module>spring-boot-file-upload</module>
         <module>springboot-fastdfs</module>
         <module>springboot-file-system</module>
         <module>springboot-new-file</module>
         <module>springboot-file-blog</module>
-        <module>springboot-fastdfs-test</module>
     </modules>
 
     <properties>
@@ -50,6 +47,7 @@
 
         <!-- Spring devtools -->
         <dependency>
+
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>

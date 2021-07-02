@@ -10,7 +10,10 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/beginWithHelloWorld/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-file-upload/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-fastdfs-test/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-fileupload/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-shiro-test/pom.xml" />
       </set>
     </option>
   </component>
