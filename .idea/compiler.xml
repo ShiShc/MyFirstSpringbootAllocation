@@ -9,8 +9,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-fastdfs" />
         <module name="SpringSecurity-Login" />
-        <module name="springboot-new-file" />
-        <module name="MyFirstSpringboot" />
         <module name="Springboot-Mybatis" />
         <module name="springboot-file-blog" />
         <module name="springboot-file-system" />
@@ -18,13 +16,18 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="JWT_demo" target="11" />
+      <module name="MyFirstSpringboot" target="8" />
       <module name="spring-boot-file-upload" target="1.8" />
       <module name="springboot-fastdfs-test" target="8" />
+      <module name="springboot-file-blog" target="8" />
+      <module name="springboot-new-file" target="8" />
       <module name="springboot-shiro-test" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="JWT_demo" options="-parameters" />
       <module name="MyFirstSpringboot" options="-parameters" />
       <module name="MyFirstSpringbootAllocation" options="-parameters" />
       <module name="SpringSecurity-Login" options="-parameters" />
