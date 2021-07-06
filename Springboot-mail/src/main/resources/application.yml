@@ -1,0 +1,10 @@
+spring:
+  mail:
+    host: smtp.qq.com
+    # 如果协议是smtp, 端口为587; 如果协议是smtps, 端口为465
+    port: 587
+    username: 343141457@qq.com
+    # 授权码
+    password: *
+    default-encoding: UTF-8
+    protocol: smtp

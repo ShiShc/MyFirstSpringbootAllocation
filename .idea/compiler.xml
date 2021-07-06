@@ -8,11 +8,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-fastdfs" />
-        <module name="SpringSecurity-Login" />
         <module name="Springboot-Mybatis" />
-        <module name="springboot-file-blog" />
+        <module name="SpringSecurity-Login" />
         <module name="springboot-file-system" />
         <module name="springboot-shiro" />
+        <module name="Springboot-mail" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -32,6 +32,7 @@
       <module name="MyFirstSpringbootAllocation" options="-parameters" />
       <module name="SpringSecurity-Login" options="-parameters" />
       <module name="Springboot-Mybatis" options="-parameters" />
+      <module name="Springboot-mail" options="-parameters" />
       <module name="spring-boot-file-upload" options="-parameters" />
       <module name="springboot-fastdfs" options="-parameters" />
       <module name="springboot-fastdfs-test" options="-parameters" />

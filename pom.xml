@@ -14,7 +14,7 @@
         <module>springboot-shiro</module>
         <module>springboot-fastdfs</module>
         <module>springboot-file-system</module>
-        <module>JWT_demo</module>
+        <module>Springboot-mail</module>
     </modules>
 
 <!--    <properties>-->
