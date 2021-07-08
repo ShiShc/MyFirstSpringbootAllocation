@@ -16,6 +16,7 @@
         <module>springboot-file-system</module>
         <module>Springboot-mail</module>
         <module>springboot-exception</module>
+        <module>springboot-kafka</module>
     </modules>
 
 <!--    <properties>-->

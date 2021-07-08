@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-fastdfs" />
+        <module name="springboot-kafka" />
         <module name="SpringSecurity-Login" />
         <module name="Springboot-Mybatis" />
         <module name="springboot-exception" />
@@ -40,6 +41,7 @@
       <module name="springboot-fastdfs-test" options="-parameters" />
       <module name="springboot-file-blog" options="-parameters" />
       <module name="springboot-file-system" options="-parameters" />
+      <module name="springboot-kafka" options="-parameters" />
       <module name="springboot-new-file" options="-parameters" />
       <module name="springboot-shiro" options="-parameters" />
       <module name="springboot-shiro-test" options="-parameters" />
