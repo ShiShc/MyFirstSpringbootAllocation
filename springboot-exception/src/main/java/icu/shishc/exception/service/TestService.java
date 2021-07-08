@@ -23,4 +23,8 @@ public class TestService {
             throw new CustomException(ResponseEnums.PASSWORD_WRONG.code, "Print error", "Exception");
         }
     }
+
+    public void get3(int x, int y) throws Exception {
+        System.out.println(x + y);
+    }
 }
