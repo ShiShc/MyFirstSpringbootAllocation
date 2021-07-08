@@ -15,6 +15,7 @@
         <module>springboot-fastdfs</module>
         <module>springboot-file-system</module>
         <module>Springboot-mail</module>
+        <module>springboot-exception</module>
     </modules>
 
 <!--    <properties>-->
